@@ -1,0 +1,9 @@
+Options -Indexes
+
+RewriteEngine On
+
+RewriteRule ^index\.php$ main.php
+RewriteRule ^index$ main.php
+RewriteRule ^main.html$ main.php
+Redirect /portofolio/index.php /portofolio/main.html
+ErrorDocument 404 /portofolio/index
